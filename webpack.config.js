@@ -46,7 +46,7 @@ module.exports = {
           },
         ],
       },
-      // CSS / SASS / SCSS
+      // CSS
       {
         test: /\.css$/,
         use: [

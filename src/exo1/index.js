@@ -15,13 +15,19 @@
  *
  * 4) Importer ces 3 fonctions dans ce module (src/exo1/index.js)
  */
-
 /*
  * Import
- */
-import test from "./test";
+  */
+import test from './test';
 
 /*
  * Tests
  */
+
+// import { coucou, salut} from './hello';
+// import hello from './hello';
+
+// sur un seule ligne
+import hello, { coucou, salut } from './hello';
+
 test(coucou, salut, hello);
