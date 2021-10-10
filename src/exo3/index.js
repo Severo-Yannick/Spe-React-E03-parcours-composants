@@ -35,12 +35,21 @@
 /*
  * Import
  */
-import test from "./test";
+import React from 'react';
+import { render } from 'react-dom';
+import test from './test';
 
 /*
  * Code
  */
+const HelloWorld = ({ lang, method }) => (
+  <div id="hello-world">
+    <h1>Ce HTML a été généré par {lang}</h1>
+    <h2>Et affiché avec {method}</h2>
+  </div>
+);
 
+render(<HelloWorld lang="React" method="ReactDOM" />, document.getElementById('root'));
 /*
  * Tests
  */
