@@ -29,11 +29,22 @@
 /*
  * Local import
  */
-import test from "./test";
+import React from 'react';
+import { render } from 'react-dom';
+import test from './test';
 
+import './exo2.css';
 /*
  * Code
  */
+const HelloWorld = () => (
+  <div id="hello-world">
+    <h1>Ce HTML a été généré par React</h1>
+    <h2>Et affiché avec ReactDOM</h2>
+  </div>
+);
+
+render(<HelloWorld />, document.getElementById('root'));
 
 /*
  * Tests
